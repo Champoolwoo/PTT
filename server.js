@@ -1,5 +1,6 @@
 var mysql = require('mysql')
 var express = require('express')
+//var socketIO = require('socket.io')
 //var http = require('http')
 
 var app = express()
@@ -26,9 +27,16 @@ app.get('/carpark', function(req, res){
     console.log(results)
     res.json(results)
 
-  })
+  })// Query
+/*
+  var sqlcount  = 'select zone count(zone) from carpark ordy by "ioc"'
+  var query2 = con.query(sqlcount, function (err, results){
+    if(err) throw err
+    console.log(results)
 
-})
+  })
+*/
+})// app.get
 
 app.listen(3306)
 console.log('Running On Port 3306')
