@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>PTT Parking</title>
+    <link rel="Stylesheet" href="css/style.css">
+
+    <!--<link rel="stylesheet" href="css/style.css">-->
+	  
+	  <!-- framework Angular -->
+	  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	  <script src="app.js"></script>
+
+  </head>
+  <body ng-controller="ParkingPTT">
+
+    <!--
+    <center>
+      <p1>Guard House 1 : {{guardhouse1}}</p1>
+      <p1>Guard House 2 : {{guardhouse2}}</p1>
+      <p1>Guard House 3 : {{guardhouse3}}</p1>
+      <p1>kvis : {{kvis}}</p1>
+      <p1>IOC : {{ioc}}</p1>
+      <p1>Vistec : {{vistec}}</p1>
+    </center>
+
+    <p ng-repeat = 'x in carparking'> {{x.zone}}</p>
+    -->
+    <div class="box">
+      <div class="box__header">
+        <h3 class="box__header-title">Status Carparking</h3>
+      </div>
+      <div class="box__body">
+        <div class="stats stats--main">
+          <div class="stats__amount">{{guardhouse1}}</div>
+          <div class="stats__caption">Guard House 1</div>
+          <div class="stats__change">
+            <div class="stats__value stats__value--positive">20</div>
+            <div class="stats__period">Capacity</div>
+          </div>
+        </div>
+    
+        <div class="stats">
+          <div class="stats__amount">{{guardhouse2}}</div>
+          <div class="stats__caption">Guard House 2</div>
+          <div class="stats__change">
+            <div class="stats__value stats__value--negative">20</div>
+            <div class="stats__period">Capacity</div>
+          </div>
+        </div>
+    
+        <div class="stats">
+          <div class="stats__amount">{{guardhouse3}}</div>
+          <div class="stats__caption">Guard House 3</div>
+          <div class="stats__change">
+            <div class="stats__value stats__value--negative">20</div>
+            <div class="stats__period">Capacity</div>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stats__amount">{{kvis}}</div>
+          <div class="stats__caption">KVIS</div>
+          <div class="stats__change">
+            <div class="stats__value stats__value--negative">20</div>
+            <div class="stats__period">Capacity</div>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stats__amount">{{ioc}}</div>
+          <div class="stats__caption">IOC</div>
+          <div class="stats__change">
+            <div class="stats__value stats__value--negative">20</div>
+            <div class="stats__period">Capacity</div>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stats__amount">{{vistec}}</div>
+          <div class="stats__caption">Vistec</div>
+          <div class="stats__change">
+            <div class="stats__value stats__value--negative">20</div>
+            <div class="stats__period">Capacity</div>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+
+  </body>
+
+</html>
